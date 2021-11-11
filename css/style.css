@@ -1,4 +1,4 @@
-@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@100;200;300;400;500;600;700&display=swap');
+@import url("https://fonts.googleapis.com/css2?family=Poppins:wght@100;200;300;400;500;600;700&display=swap");
 
 * {
   margin: 0;
@@ -8,7 +8,7 @@
 }
 
 body {
-  background: lightblue;
+  background: rgb(27, 27, 28);
   display: flex;
   justify-content: center;
   align-items: center;
@@ -31,13 +31,13 @@ img {
   background: #fff;
   display: grid;
   grid-template-columns: 1fr 2fr;
-  box-shadow: 0 35px 55px rgba(0, 0, 0, 1);
+  box-shadow: 2px 2px 20px 10px rgb(146, 214, 139);
 }
 
 .container .left_side {
   position: relative;
   background: #003147;
-  padding: 40px;
+  padding: 20px;
 }
 
 .profile_text {
@@ -116,7 +116,7 @@ a {
 }
 .container ul li span {
   color: #fff;
-  font-weight: 300;
+  font-weight: 500;
 }
 
 .contact_info.education li {
@@ -134,7 +134,7 @@ a {
 
 .contact_info.education h4 {
   color: #fff;
-  font-weight: 100;
+  font-weight: 300;
 }
 .contact_info.language .percent {
   position: relative;
@@ -187,8 +187,8 @@ a {
 .about .box .year_company {
   min-width: 150px;
 }
-.box .text h4{
-    text-transform: capitalize;
+.box .text h4 {
+  text-transform: capitalize;
 }
 
 .about .box .year_company h5 {
@@ -241,35 +241,35 @@ a {
   margin: 10px 0;
 }
 
-.interest ul li .fa{
-    color: #03a9f4;
-    font-size: 1.3em;
-    width: 32px;
+.interest ul li .fa {
+  color: #03a9f4;
+  font-size: 1.3em;
+  width: 32px;
 }
-
 
 /** medias querys*/
 
-@media (max-width: 1000px){
-    .container{
-        margin: 10px;
-        grid-template-columns: repeat(1,1fr);
-    }
-    .interest ul {
-        grid-template-columns: repeat(2,1fr);
-    }
+@media (max-width: 1095px) {
+  .container {
+    margin: 10px;
+    grid-template-columns: repeat(1, 1fr);
+  }
+  .interest ul {
+    grid-template-columns: repeat(2, 1fr);
+  }
+
 }
-@media (max-width: 600px){
-    .about .box{
-         flex-direction: column;
-    }
-    .about .box .year_company {
-        min-width: 150px;
-    }
-    .interest ul {
-        grid-template-columns: repeat(1,1fr);
-    }
-    .skills .box{
-        grid-template-columns: repeat(1,1fr);
-    }
+@media (max-width: 800px) {
+  .about .box {
+    flex-direction: column;
+  }
+  .about .box .year_company {
+    min-width: 150px;
+  }
+  .interest ul {
+    grid-template-columns: repeat(1, 1fr);
+  }
+  .skills .box {
+    grid-template-columns: repeat(1, 1fr);
+  }
 }
