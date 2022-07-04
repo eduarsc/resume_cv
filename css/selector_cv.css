@@ -6,21 +6,12 @@
 }
 body {
   background: radial-gradient(#e1d9d1, #091607);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  min-height: 100vh;
 }
-/*{
-  animation-name: girar;
-  animation-duration: 2s;
-  animation-iteration-count: 4;
-  animation-timing-function: linear;
-}
-@keyframes girar {
-  from {
-    transform: rotate(0deg);
-  }
-  to {
-    transform: rotate(360deg);
-  }
-} */
+
 
 .title {
   display: flex;
@@ -29,13 +20,15 @@ body {
   flex-direction: column;
   flex-wrap: wrap;
   font-family: "Road Rage", sans-serif;
-  font-size: 35px;
+  font-size: 2em;
+  
 }
 .title h1 {
   color: rgba(255, 255, 255, 0.842);
   text-align: center;
-  letter-spacing: 20px;
+  letter-spacing: 1rem;
   text-shadow: 2px 2px 4px #000000;
+
 }
 .container {
   display: flex;
@@ -44,7 +37,7 @@ body {
   align-items: center;
   flex-wrap: wrap;
   width: 100%;
-  min-height: 720px;
+  min-height: 100vh;
 }
 .box {
   display: flex;
@@ -59,50 +52,18 @@ body {
   justify-content: space-between;
   align-items: center;
   padding: 10px;
-  margin: 25px 0 25px 0;
-  /* border-radius: 50% 20% / 10% 40%; */
+  /* margin: 25px 0 25px 0; */
 }
-/* .img_box_left h1 {
-    font-size: 25px;
-  color: black;
-  text-shadow: 2px 2px 20px #fff;
-}
-.img_box_rigth h1 {
-  font-size: 25px;
-  color: black;
-  text-shadow: 2px 2px 20px #fff;
-} */
 
-/* .img_box_left {
-  background: rgba(18, 65, 151, 0.5);
-}
-.img_box_rigth {
-  background: rgba(79, 124, 33, 0.5);
-}
-.name {
-  margin: 10px 0px 10px 20px;
-} */
 
 img {
-  width: 20em;
+  width: 19rem;
   height: 15rem;
-  /* border-radius: 20% 80% / 10% 40%; */
+  border-radius: 5%;
 }
 
-#img_español:hover {
+#img_español:hover, #img_ingles:hover {
   background:black;
   padding: 2px;
-  border-radius: 20% 80% / 10% 40%;
-  box-shadow: 10px 1px 20px 15px #f5f5f5;
-  transform: rotate(360deg);
-  transition: linear 0.3s;
-}
-
-#img_ingles:hover {
-  background:black;
-  padding: 2px;
-  border-radius: 80% 20% / 40% 10%;
-  box-shadow: 10px 1px 20px 15px #fffbfb;
-  transform: rotate(-360deg);
-  transition: linear 0.3s;
+  box-shadow: 10px 1px 20px 15px #15010151;
 }
