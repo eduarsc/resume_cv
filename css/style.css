@@ -20,7 +20,7 @@ body {
 img {
   width: 13em;
   height: 13em;
-  transform: rotate(-15deg);
+  /* transform: translateY(1rem) */
 }
 .container {
   position: relative;
@@ -31,7 +31,6 @@ img {
   background: #fff;
   display: grid;
   grid-template-columns: 1fr 2fr;
-  box-shadow: 2px 2px 20px 10px rgb(146, 214, 139);
 }
 
 .container .left_side {
