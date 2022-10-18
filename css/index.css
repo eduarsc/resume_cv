@@ -5,7 +5,7 @@
   box-sizing: border-box;
 }
 body {
-  background-image: url('images/background.webp');
+  background-image: url('/resume_cv/images/background.webp');
   background-size: contain;
   background-repeat: round;
   
