@@ -5,7 +5,10 @@
   box-sizing: border-box;
 }
 body {
-  background-color: #000000;
+  background-image: url('/images/background.webp');
+  background-size: contain;
+  background-repeat: round;
+  
   display: flex;
   justify-content: center;
   align-items: center;
@@ -25,10 +28,10 @@ body {
   
 }
 .title h1 {
-  color: rgba(255, 255, 255, 0.842);
+  color: rgba(40, 247, 161, 0.685);
   text-align: center;
-  letter-spacing: 1rem;
-  text-shadow: 2px 2px 4px #000000;
+  letter-spacing: 0.5rem;
+  text-shadow: 2px 8px 10px #000000;
 
 }
 .container {
@@ -53,13 +56,14 @@ body {
   justify-content: space-between;
   align-items: center;
   padding: 5px;
+  margin-bottom: 10px;
 }
 
 
 img {
   width: 19rem;
-  height: 15rem;
-  border-radius: 5%;
+  height: 16rem;
+  border-radius: 6%;
 }
 
 #img_español:hover, #img_ingles:hover {
