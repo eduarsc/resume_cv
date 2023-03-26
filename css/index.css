@@ -4,11 +4,12 @@
   padding: 0;
   box-sizing: border-box;
 }
+
 body {
   background-image: url('/resume_cv/images/background.webp');
   background-size: contain;
   background-repeat: round;
-  
+
   display: flex;
   justify-content: center;
   align-items: center;
@@ -24,16 +25,18 @@ body {
   flex-wrap: wrap;
   font-family: "Road Rage", sans-serif;
   font-size: 2rem;
-  
-  
-}
-.title h1 {
-  color: rgba(40, 247, 161, 0.685);
-  text-align: center;
-  letter-spacing: 0.5rem;
-  text-shadow: 2px 8px 10px #000000;
+
 
 }
+
+.title h1 {
+  color: rgba(66, 235, 24, 0.836);
+  text-align: center;
+  letter-spacing: 0.5rem;
+  text-shadow: 20px 20px 1px #000000;
+
+}
+
 .container {
   display: flex;
   flex-direction: column;
@@ -43,6 +46,7 @@ body {
   width: 100%;
   min-height: 100vh;
 }
+
 .box {
   display: flex;
   width: 100%;
@@ -50,6 +54,7 @@ body {
   flex-direction: row;
   justify-content: space-evenly;
 }
+
 .img_box_left,
 .img_box_rigth {
   display: flex;
@@ -66,6 +71,7 @@ img {
   border-radius: 6%;
 }
 
-#img_español:hover, #img_ingles:hover {
+#img_español:hover,
+#img_ingles:hover {
   padding: 2px;
 }
