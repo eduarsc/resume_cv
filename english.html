@@ -292,33 +292,23 @@ Finally, I define myself as a person with a lot of energy, always willing to lea
       </div>
     </div>
   </div>
-  <button id="downloadPdf">Download PDF</button>
+  <button id="downloadPdf" style="position: fixed; top: 10px; right: 10px;">Download PDF</button>
   <script src="https://cdnjs.cloudflare.com/ajax/libs/html2pdf.js/0.9.3/html2pdf.bundle.min.js"></script>
   <script>
     document.getElementById('downloadPdf').addEventListener('click', function () {
       const element = document.querySelector('.container');
       
-      html2pdf()
-        .set({
-          margin: 1,
-          filename: 'resume.pdf',
-          image: {
-            type: 'jpeg',
-            quality: 0.98
-          },
-          html2canvas: {
-            scale: 1,
-            letterRendering: true,
-          },
-          jsPDF: {
-            unit: 'in',
-            format: 'letter',
-            orientation: 'portrait'
-          }
-        })
-        .from(element)
-        .save();
-    });
+    html2pdf()
+    .set({
+      margin: 5, // Márgenes mínimos de 5mm
+      filename: 'resume.pdf',
+      image: { type: 'jpeg', quality: 0.98 },
+      html2canvas: { scale: 3, letterRendering: true },
+      jsPDF: { format: 'a4', orientation: 'portrait' }
+    })
+    .from(element)
+    .save();
+});
   </script>
 </body>
 
