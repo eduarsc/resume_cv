@@ -1,25 +1,25 @@
-
 document.getElementById('downloadPdf').addEventListener('click', function () {
-    const element = document.querySelector('.container'); // Selecciona el div con clase 'container'
-
+    const bodyClone = document.body.cloneNode(true);
+    const downloadBtn = bodyClone.querySelector('#downloadPdf');
+    downloadBtn.parentNode.removeChild(downloadBtn);
     html2pdf()
-      .set({
-        margin: 1,
-        filename: 'resume.pdf',
-        image: {
-          type: 'jpeg',
-          quality: 0.98
-        },
-        html2canvas: {
-          scale: 3, // Ajusta la escala si es necesario para mejorar la calidad de la imagen
-          letterRendering: true,
-        },
-        jsPDF: {
-          unit: 'in',
-          format: 'letter',
-          orientation: 'portrait'
-        }
-      })
-      .from(element)
-      .save();
+        .set({
+            margin: 1,
+            filename: 'calvete_eduars_cv.pdf',
+            image: { 
+              type: 'jpeg', 
+              quality: 0.99 
+            },
+            html2canvas: { 
+              scale: 1, 
+              letterRendering: true 
+            },
+            jsPDF: { 
+                format: 'a4', 
+                orientation: 'portrait',
+                output: 'grayscale'
+            }
+        })
+        .from(bodyClone)
+        .save();
 });
