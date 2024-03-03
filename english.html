@@ -296,25 +296,31 @@ Finally, I define myself as a person with a lot of energy, always willing to lea
   <script src="https://cdnjs.cloudflare.com/ajax/libs/html2pdf.js/0.9.3/html2pdf.bundle.min.js"></script>
   <script>
     document.getElementById('downloadPdf').addEventListener('click', function () {
-    // Clonar el elemento body
     const bodyClone = document.body.cloneNode(true);
-
-    // Eliminar el botón de descarga de la copia
     const downloadBtn = bodyClone.querySelector('#downloadPdf');
     downloadBtn.parentNode.removeChild(downloadBtn);
-
-    // Generar el PDF sin el botón de descarga
     html2pdf()
         .set({
-            margin: 10,
+            margin: 2,
             filename: 'calvete_eduars_cv.pdf',
-            image: { type: 'jpeg', quality: 0.98 },
-            html2canvas: { scale: 1, letterRendering: true },
-            jsPDF: { format: 'a4', orientation: 'portrait' }
+            image: { 
+              type: 'jpeg', 
+              quality: 0.99 
+            },
+            html2canvas: { 
+              scale: 1, 
+              letterRendering: true 
+            },
+            jsPDF: { 
+                format: 'a4', 
+                orientation: 'portrait',
+                output: 'grayscale'
+            }
         })
         .from(bodyClone)
         .save();
 });
+
   </script>
 </body>
 
