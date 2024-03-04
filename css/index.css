@@ -30,12 +30,14 @@ body {
 }
 
 .title_h1 {
-  font-family: 'Arial', sans-serif; /* Fuente de letra similar */
-  font-size: 48px; /* Tamaño de fuente */
-  color: #306998; /* Color del texto */
-  text-align: center; /* Centrar el texto */
-  letter-spacing: 0.5rem; /* Espaciado entre letras */
-  text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.3); /* Sombra del texto */
+  font-family: 'Arial', sans-serif;
+  font-size: 48px;
+  text-align: center;
+  letter-spacing: 0.5rem;
+  background: linear-gradient(to bottom, rgba(66, 235, 24, 0.836) 50%, #FFD43B 50%);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  background-clip: text;
 }
 
 
